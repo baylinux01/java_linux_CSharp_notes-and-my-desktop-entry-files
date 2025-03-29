@@ -1,0 +1,4 @@
+Programı bilgisayarın uygulama olarak tanıtması için 
+bu dosyanın yanındakine benzer bir dosya hazırlanmalı
+sonra hazırlanan dosya ~/.local/share/applications veya 
+/usr/share/applications içerisine kopyalanmalıdır.

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Postman
+Comment=Postman
+Icon=/home/baylinux/Postman/app/icons/icon_128x128.png
+Exec=/home/baylinux/Postman/Postman
+Terminal=false
+Categories=Development

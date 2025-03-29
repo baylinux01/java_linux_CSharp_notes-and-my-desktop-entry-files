@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Eclipse
+Comment=Eclipse
+Icon=/home/baylinux/eclipse/icon.xpm
+Exec=/home/baylinux/eclipse/eclipse
+Terminal=false
+Categories=Development
