@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Only Office Desktop Editors
+Comment=Only Office Desktop Editors
+Icon=/home/baylinux/my-app-icons/only-office.jpg
+Exec=/home/baylinux/only-office/DesktopEditors-x86_64.AppImage
+Terminal=false
+Categories=Development
+StartupNotify=false

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Rustdesk
+Comment=Rustdesk Remote Connection
+Icon=/home/baylinux/my-app-icons/rustdesk.jpg
+Exec=/home/baylinux/rustdesk/rustdesk-1.4.4-x86_64.AppImage
+Terminal=false
+Categories=Development
+StartupNotify=false

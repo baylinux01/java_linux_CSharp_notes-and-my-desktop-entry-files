@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Antares
+Comment=Antares Sql Client
+Icon=/home/baylinux/my-app-icons/antares.png
+Exec=/home/baylinux/antares/Antares-0.7.35-linux_x86_64.AppImage
+Terminal=false
+Categories=Development

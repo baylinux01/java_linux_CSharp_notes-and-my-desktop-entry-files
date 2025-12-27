@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Zen Browser
+Comment=Zen Browser
+Icon=/home/baylinux/zen/browser/chrome/icons/default/default64.png
+Exec=/home/baylinux/zen/zen
+Terminal=false
+Categories=Development

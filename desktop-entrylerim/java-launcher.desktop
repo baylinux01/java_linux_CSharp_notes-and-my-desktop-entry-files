@@ -3,6 +3,6 @@ Type=Application
 Name=Java Jar Loader
 Exec=java -jar %f
 MimeType=application/x-java-archive;application/zip;
-Icon=gnome-mime-application-x-jar
+Icon=/home/baylinux/my-app-icons/jar-loader.jpg
 NoDisplay=true
 StartupNotify=true
