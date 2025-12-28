@@ -1,4 +1,17 @@
 Programı bilgisayarın uygulama olarak tanıtması için 
 bu dosyanın yanındakine benzer bir dosya hazırlanmalı
-sonra hazırlanan dosya ~/.local/share/applications veya 
-/usr/share/applications içerisine kopyalanmalıdır.
+
+sonra hazırlanan dosya tercihen
+
+~/.local/share/applications  
+
+dizinine kopyalanmalıdır.
+
+sonra ya
+
+update-desktop-database ~/.local/share/applications
+
+kodu kullanılarak güncellemeler sisteme gösterilmeli 
+ya da
+bilgisayar yeniden başlatılmalıdır.
+
