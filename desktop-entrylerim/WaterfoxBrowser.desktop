@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Waterfox Browser
+Comment=Waterfox Browser
+Icon=/home/baylinux/waterfox/browser/chrome/icons/default/default64.png
+Exec=/home/baylinux/waterfox/waterfox
+Terminal=false
+Categories=Development

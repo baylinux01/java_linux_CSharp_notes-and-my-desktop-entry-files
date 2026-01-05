@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=VSCode
+Comment=Microsoft VSCode
+Icon=/home/baylinux/VSCode-linux-x64/resources/app/resources/linux/code.png
+Exec=/home/baylinux/VSCode-linux-x64/code
+Terminal=false
+Categories=Development
