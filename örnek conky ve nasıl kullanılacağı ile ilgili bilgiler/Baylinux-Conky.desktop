@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Baylinux-Conky
+Comment=Baylinux Conky
+Exec=conky -c /home/baylinux/.config/conky/conky.conf -p 5
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+

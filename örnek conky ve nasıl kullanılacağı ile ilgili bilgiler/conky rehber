@@ -1,0 +1,29 @@
+
+Önce hazırladığım conky.conf dosyasını ~/.config/conky/ dizinine kopyalamak gerekiyor
+
+Eğer xfce kullanılıyorsa 
+EN basit yöntem olarak xfce Session and Startup kısmına uygulama oluşturup
+Command kısmına aşağıdaki kodu yapıştırmak yeterli.
+
+conky -c /home/baylinux/.config/conky/conky.conf -p 5
+
+Bu yöntem sizin yerinize bir .desktop uzantılı Desktop Entry dosyası yazıp ~/.config/autostart/
+dizinine bu .desktop dosyasını koyuyor.
+
+Ama uzun yoldan gitmek isterseniz Desktop Entry dosyasını kendiniz yazıp ~/.config/autostart/
+dizinine koymalısınız.
+
+Aşağıda örnek Desktop Entry dosyası içeriği mevcuttur
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Baylinux-Conky
+Comment=Baylinux Conky
+Exec=conky -c /home/baylinux/.config/conky/conky.conf -p 5
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
