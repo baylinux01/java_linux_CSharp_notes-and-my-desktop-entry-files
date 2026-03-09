@@ -27,3 +27,5 @@ RunHook=0
 StartupNotify=false
 Terminal=false
 Hidden=false
+
+Not: Eğer sıcaklık değeri göstermezse hwmon 0 yazan yeri hwmon 1 olarak değiştirip deneyin.
