@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Compiz Start
+Comment=Application To Start Compiz
+Icon=compiz
+Exec=compiz --replace ccp
+Terminal=false
+Categories=Accessories
+Path=
+StartupNotify=false

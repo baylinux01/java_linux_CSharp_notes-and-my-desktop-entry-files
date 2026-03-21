@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Compiz Stop
+Comment=Application To Stop Compiz
+Icon=compiz
+Exec=xfwm4 --replace
+Terminal=false
+Categories=Accessories
+Path=
+StartupNotify=false
