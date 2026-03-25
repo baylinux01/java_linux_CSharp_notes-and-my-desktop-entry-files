@@ -1,11 +1,11 @@
 
 Önce hazırladığım conky.conf dosyasını ~/.config/conky/ dizinine kopyalamak gerekiyor
 
-Eğer xfce kullanılıyorsa 
+Kullanıcı giriş yaptığında conky'i otomatik başlatmak için eğer xfce kullanılıyorsa 
 EN basit yöntem olarak xfce Session and Startup kısmına uygulama oluşturup
 Command kısmına aşağıdaki kodu yapıştırmak yeterli.
 
-conky -c /home/baylinux/.config/conky/conky.conf -p 5
+conky -c /home/baylinux/.config/conky/baylinux_conky.conf -p 5
 
 Bu yöntem sizin yerinize bir .desktop uzantılı Desktop Entry dosyası yazıp ~/.config/autostart/
 dizinine bu .desktop dosyasını koyuyor.
@@ -19,9 +19,9 @@ Aşağıda örnek Desktop Entry dosyası içeriği mevcuttur
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=Baylinux-Conky
-Comment=Baylinux Conky
-Exec=conky -c /home/baylinux/.config/conky/conky.conf -p 5
+Name=Auto-Start-Baylinux-Conky
+Comment=Auto Start Baylinux Conky With Delay
+Exec=bash -c "exec -a baylinux_conky conky -c /home/baylinux/.config/conky/conky.conf -p 5"
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
@@ -29,3 +29,35 @@ Terminal=false
 Hidden=false
 
 Not: Eğer sıcaklık değeri göstermezse hwmon 0 yazan yeri hwmon 1 olarak değiştirip deneyin.
+
+Ayrıca manuel start yapabilmek için "-p 5" saniye gecikmesini kaldıran yani o kısmı Exec kısmından silen bir versiyon yapıp
+~/.local/share/applications kısmına koymak gerekli. 
+Örnek aşağıda
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Start-Baylinux-Conky
+Comment=Start Baylinux Conky Without Delay
+Exec=bash -c "exec -a baylinux_conky conky -c /home/baylinux/.config/conky/conky.conf"
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+
+Manuel stop için ise bir stop amaçlı desktop entry yazmak gerekiyor. 
+Sonra onu da yine ~/.local/share/applications içine koymak gerekiyor
+örnek aşağıda 
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Stop-Baylinux-Conky
+Comment=Stop Baylinux Conky
+Exec=bash -c "ps -eo pid,command | grep baylinux_conky | awk '{print $1}' | xargs kill"
+StartupNotify=false
+Terminal=false
+Hidden=false
