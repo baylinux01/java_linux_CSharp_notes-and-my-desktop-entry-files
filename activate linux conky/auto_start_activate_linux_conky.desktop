@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Auto-Start-Activate-Linux-Conky
+Comment=Auto Start Activate Linux Conky With Delay
+Exec=bash -c "exec -a activate_linux_conky conky -c /home/baylinux/.config/conky/activate_linux_conky.conf -p 5"
+StartupNotify=false
+Terminal=false
+Hidden=false
+

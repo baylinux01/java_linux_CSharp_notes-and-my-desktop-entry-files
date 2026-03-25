@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Auto-Start-Baylinux-Conky
+Comment=Auto Start Baylinux Conky With Delay
+Exec=bash -c "exec -a baylinux_conky conky -c /home/baylinux/.config/conky/baylinux_conky.conf -p 5"
+StartupNotify=false
+Terminal=false
+Hidden=false
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Stop-Activate-Linux-Conky
+Comment=Stop-Activate-Linux Conky
+Exec=bash -c "ps -eo pid,command | grep activate_linux_conky | awk '{print $1}' | xargs kill"
+StartupNotify=false
+Terminal=false
+Hidden=false

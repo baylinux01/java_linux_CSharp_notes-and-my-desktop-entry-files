@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Stop-Baylinux-Conky
+Comment=Stop Baylinux Conky
+Exec=bash -c "ps -eo pid,command | grep baylinux_conky | awk '{print $1}' | xargs kill"
+StartupNotify=false
+Terminal=false
+Hidden=false

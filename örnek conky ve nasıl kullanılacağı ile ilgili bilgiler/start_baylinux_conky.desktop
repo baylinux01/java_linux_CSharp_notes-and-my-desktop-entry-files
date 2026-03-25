@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Start-Baylinux-Conky
+Comment=Start Baylinux Conky
+Exec=bash -c "exec -a baylinux_conky conky -c /home/baylinux/.config/conky/baylinux_conky.conf"
+StartupNotify=false
+Terminal=false
+Hidden=false
+
